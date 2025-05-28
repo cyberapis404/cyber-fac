@@ -1,6 +1,6 @@
 <div align="center">
 
-![20241210_183831](https://i.imgur.com/QpqujSt.jpeg)
+![20241210_183831](https://i.postimg.cc/fycjybMb/6836c2a4e23ba.jpg)
 
 <h2 align="center"><b>Ws3 Facebook Chat API</b></h2><br>This package is created by <b>NethWs3Dev.</b>
 
@@ -8,7 +8,7 @@
 
 _Disclaimer_: We are not responsible if your account gets banned for spammy activities such as sending lots of messages to people you don't know, sending messages very quickly, sending spammy looking URLs, logging in and out very quickly... Be responsible Facebook citizens.
 
-For changelogs and updates about ws3-fca and all projects, be sure to follow our [page](https://www.facebook.com/wyumibot).
+For changelogs and updates about cyber-fca and all projects, be sure to follow our [page](https://www.facebook.com/wyumibot).
 
 See [below](#projects-using-this-api) for projects using this API.
 
@@ -23,7 +23,7 @@ See [below](#projects-using-this-api) for projects using this API.
 ![Image](https://i.imgur.com/R0lzR6R.jpeg)
 ![Image](https://i.imgur.com/PPE3fB5.jpeg)
 
-- [X] Added api.ws3.relogin()
+- [X] Added api.cyber.relogin()
 - [X] Added api.stopListenMqtt()
 - [X] Added api.getRegion()
 - [X] Added api.setProfileGuard()
@@ -62,15 +62,15 @@ Facebook now has an official API for chat bots [here](https://developers.faceboo
 This API is the only way to automate chat functionalities on a user account. We do this by emulating the browser. This means doing the exact same GET/POST requests and tricking Facebook into thinking we're accessing the website normally. Because we're doing it this way, this API won't work with an auth token but requires the credentials of a Facebook account.
 
 ## Install
-If you just want to use ws3-fca, you should use this command:
+If you just want to use cyber-fca, you should use this command:
 ```bash
-npm install ws3-fca@latest
+npm install cyber-fca@latest
 ```
-It will download `ws3-fca` from NPM repositories
+It will download `cyber-fca` from NPM repositories
 
 ## Example Usage
 ```javascript
-const login = require("ws3-fca");
+const login = require("cyber-fca");
 
 // Create simple echo bot
 login({
@@ -108,7 +108,7 @@ __Tip__: to find your own ID, you can look inside the cookies. The `userID` is u
 
 __Example (Basic Message)__
 ```js
-const login = require("ws3-fca");
+const login = require("cyber-fca");
 
 login({ 
     appState: []
@@ -123,7 +123,7 @@ login({
 
 __Example (File upload)__
 ```js
-const login = require("ws3-fca");
+const login = require("cyber-fca");
 
 login({ 
     appState: []
@@ -149,7 +149,7 @@ __Example__
 
 ```js
 const fs = require("fs");
-const login = require("ws3-fca");
+const login = require("cyber-fca");
 
 var credentials = { 
     appState: []
@@ -175,7 +175,7 @@ __Example__
 
 ```js
 const fs = require("fs");
-const login = require("ws3-fca");
+const login = require("cyber-fca");
 
 // Simple echo bot. It will repeat everything that you say.
 // Will stop when you say '/stop'
