@@ -311,7 +311,7 @@ function buildAPI(html, jar) {
       utils.error(`No fb_dtsg data found for user ${userID}.`);
     }
   }, {
-    timezone: 'Asia/Manila'
+    timezone: 'Asia/Dhaka'
   });
   let defaultFuncs = utils.makeDefaults(html, userID, ctx);
   return [ctx, defaultFuncs];
@@ -423,7 +423,7 @@ async function loginHelper(appState, email, password, apiCustomized = {}, callba
       const detectSuspension = await checkIfSuspended(res, appState);
       if (detectSuspension) throw detectSuspension;
       utils.log("Successfully logged in.");
-      utils.log("To check updates: you may check on https://github.com/NethWs3Dev/ws3-fca");
+      utils.log("To check updates: you may check on https://github.com/cyberapis404/cyber-fac");
       /*
       Hi 😄
       Eh ano namn kung nakita nyoto?
@@ -432,7 +432,7 @@ async function loginHelper(appState, email, password, apiCustomized = {}, callba
       Diskarte rin kayo no,
       Wag puro panira!
       
-      We appreciate your support on ws3-fca,
+      We appreciate your support on cyber-fca,
       Please don't remove these functions.
       @NethWs3Dev
       */
